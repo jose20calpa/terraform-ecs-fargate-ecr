@@ -391,14 +391,14 @@ Esta arquitectura modular proporciona:
 2. **Revisar el plan de ejecución:**
 
    ```bash
-   terraform plan
+   terraform plan -out=tfplan
    ```
 
    _Muestra qué recursos se crearán, modificarán o eliminarán sin ejecutar cambios_
 
 3. **Aplicar la configuración:**
    ```bash
-   terraform apply
+   terraform apply tfplan
    ```
    _Ejecuta el plan y crea la infraestructura en AWS según la configuración_
 
