@@ -155,16 +155,15 @@ Configurar credenciales con permisos para:
 ### Estructura del proyecto
 
 ```
-ECR-LAB/
-├── terraform-ecs-fargate-ecr/
-│   ├── main.tf                 # Configuración principal
-│   ├── variables.tf            # Variables globales
-│   ├── networking/             # Módulo de red
-│   ├── security_groups/        # Módulo de seguridad
-│   ├── ecr/                   # Módulo ECR
-│   ├── alb/                   # Módulo Load Balancer
-│   └── ecs/                   # Módulo ECS
-└── test-todo-app/             # Aplicación de ejemplo
+terraform-ecs-fargate-ecr/
+├── main.tf                 # Configuración principal
+├── variables.tf            # Variables globales
+├── networking/             # Módulo de red
+├── security_groups/        # Módulo de seguridad
+├── ecr/                   # Módulo ECR
+├── alb/                   # Módulo Load Balancer
+├── ecs/                   # Módulo ECS
+└── test-todo-app/         # Aplicación de ejemplo
 ```
 
 ## Módulos Terraform
@@ -433,7 +432,7 @@ Esta arquitectura modular proporciona:
 1. **Obtener URL del Load Balancer:**
 
    ```bash
-   cd ../terraform-ecs-fargate-ecr
+   cd ../inrastructure
    terraform output alb_dns_name
    ```
 
